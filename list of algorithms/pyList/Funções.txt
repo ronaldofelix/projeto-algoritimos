@@ -1,0 +1,41 @@
+#Contar total de Anagramas
+def ContaAnagramas (palavra, lista):
+  testador = 0
+  total = 0
+  for i in range(len(lista)):
+    if len(palavra) == len(lista[i]):
+      for j in range(len(palavra)):
+        if palavra[j] in lista[i]:
+          testador += 1
+    if testador == len(palavra):
+      total += 1
+    testador = 0
+  return total
+
+
+#Maior número entre dois valores
+def maiorentre(num1, num2):
+  maior: 0
+  if num1 > num2:
+    maior = num1
+  else:
+    maior = num2
+  return maior
+
+
+#Inverter Frase
+def Inverte (frase):
+  fraseInvertida = ""
+  for i in range(len(frase) - 1, -1, -1):
+    fraseInvertida = fraseInvertida + frase[i]
+  return fraseInvertida
+
+
+#Testar se a palavra é um Palindromo
+def TestaPalindromo (palavra):
+  palavra = str.lower(palavra)
+  nova = Inverte(palavra)
+  if (palavra == nova):
+    return True
+  else:
+    return False
