@@ -1,2 +1,2 @@
 # Projeto Algorítimos 💻⌨
-Encontre aqui vários algorítimos que possam solucionar seus problemas.
+Aqui você encontrará vários algoritmos que podem ajudá-lo a resolver seus desafios.
